@@ -11,8 +11,8 @@ import os
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
 CAMINHO_ARQUIVO_CREDENCIAIS = "credenciais.json"
-ID_PLANILHA = "1Bho0kZb1FDRj-dA-T5qJZ-mc3q32R7KlmyN4hmJyEDc"
-CEPS = ['57025070','71691181','69033615']
+ID_PLANILHA = "insira o ID da sua planilha aqui"
+CEPS = ['cep1','cep2','cep3']
 
 def main():
     load_dotenv()
@@ -110,7 +110,7 @@ def enviar_email(maestro: BotMaestroSDK):
     email.login(email_login, senha_login)
 
     # Definindo os atributos que comporão a mensagem
-    para = ["livecodingrpa@gmail.com"]
+    para = ["email1", "email2"]
     assunto = "Olá Mundo!"
     corpo_email = "<h1>Olá!</h1> Esta é uma mensagem de teste!"
 
