@@ -56,6 +56,9 @@ Ajuste também os CEPs que você deseja consultar e ajuste na constante no códi
 CEPS = ['cep1','cep2','cep3']
 ```
 
+## 08. Adicione os e-mails que deseja enviar
+Na função `enviar_email(maestro: BotMaestroSDK)` você deve identificar a linha `para = ["email1", "email2"]` e adicionar para quais e-mails deseja enviar a mensagem.
+
 # Para executar local
 Se você quiser testar primeiramente no seu computador ou máquina virtual, você deverá:
 
@@ -108,6 +111,7 @@ Há diversas possibilidades de melhorias neste projeto e deixo à disponibilidad
 - Receber o CEP de consulta como parâmetro na execução do robô ou ainda consumir de uma planilha;
 - Ajustar a separação de ambiente para saber se estamos executando local ou no Orquestrador;
 - Refatorar o código para melhor separação de responsabilidades;
+- Criar mensagem de e-mail com mais detalhes e informações e formatá-la com apoio da [biblioteca Beautiful Soup](https://beautiful-soup-4.readthedocs.io/en/latest/#quick-start);
 - Entre outros.
 
   Fiquem à vontade de mandar sugestões e correções pelas issues do projeto.
