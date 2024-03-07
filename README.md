@@ -101,7 +101,7 @@ python bot.py
 ```
 
 # Para executar no BotCity Orquestrador
-Quando estamos executando o robô no Orquestrador, a tarefa será criada, então não precisamos deixar os códigos do item anterior comentados. Tire os comentários para que os códigos possam ser executados corretamente. O único código que você deverá comentar neste caso é o do login. Uma outra forma de lidar com essa questão de ambiente, seria fazer uma validação, demonstrada neste artigo: [Como identificar se a automação está executando localmente ou no BotCity Orquestrador?](https://dev.to/botcitydev/como-identificar-se-a-automacao-esta-executando-localmente-ou-no-botcity-orquestrador-3kh8)https://dev.to/botcitydev/como-identificar-se-a-automacao-esta-executando-localmente-ou-no-botcity-orquestrador-3kh8
+Quando estamos executando o robô no Orquestrador, a tarefa será criada, então não precisamos deixar os códigos do item anterior comentados. Tire os comentários para que os códigos possam ser executados corretamente. O único código que você deverá comentar neste caso é o do login. Uma outra forma de lidar com essa questão de ambiente, seria fazer uma validação, demonstrada neste artigo: [Como identificar se a automação está executando localmente ou no BotCity Orquestrador?](https://dev.to/botcitydev/como-identificar-se-a-automacao-esta-executando-localmente-ou-no-botcity-orquestrador-3kh8)
 
 Lembre-se de seguir as orientações da [documentação](https://documentation.botcity.dev/pt/tutorials/orchestrating-your-automation/) para fazer o deploy da sua automação no Orquestrador e executar com apoio do Runner.
 
