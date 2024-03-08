@@ -17,22 +17,33 @@ Ao instalar o BotCity Studio SDK, caso aconteça algum problema, você pode usar
 # Antes de executar
 Atenção aos passos que deve seguir após fazer o fork e clone do projeto em seu computador.
 
-## 01. Instale as dependências do `requirements.txt`
+## 01. Crie ambiente virtual
+Você pode utilizar ambiente virtual com o Python, se preferir. E para criá-lo, execute o seguinte comando:
+```
+python -m venv venv
+```
+
+Após a criação, é necessário ativá-lo. Para isso, execute o comando abaixo:
+```
+venv\Scripts\activate
+```
+
+## 02. Instale as dependências do `requirements.txt`
 Para fazer a instalação das dependências do projeto, você deve executar no terminal da sua IDE o comando abaixo, a partir da pasta do projeto:
 ```
 pip install --upgrade -r requirements.txt
 ```
 
-## 02. Crie a credencial para acesso ao e-mail no BotCity Orquestrador
+## 03. Crie a credencial para acesso ao e-mail no BotCity Orquestrador
 Para acesso ao e-mail de maneira mais segura, criamos a credencial na plataforma do Orquestrador. O nome dado durante o desenvolvimento do projeto foi ``. Você pode ajustar isso, mas é importante lembrar de ajustar também no código. Para orientações de como criar a credencial, você pode seguir [este passo-a-passo](https://documentation.botcity.dev/pt/maestro/features/credentials/).
 
-## 03. Faça a configuração da API do Google Sheets
+## 04. Faça a configuração da API do Google Sheets
 No projeto criado, estamos utilizando a planilha do Google Sheets. Para seguir o mesmo modelo, você deverá configurar corretamente a API do Google Sheets com os seus acessos, conforme descrito no [passo-a-passo da documentação](https://documentation.botcity.dev/pt/plugins/google/sheets/).
 
-## 04. Faça a configuração do Plugin de E-mail
+## 05. Faça a configuração do Plugin de E-mail
 No projeto criado, estamos utilizando o plugin de e-mail para envio de mensagens pelo Gmail. Caso você queira ajustar para outro tipo de e-mail, siga a [documentação e as orientações descritas](https://documentation.botcity.dev/pt/plugins/email/).
 
-## 05. Ajuste o login do Orquestrador
+## 06. Ajuste o login do Orquestrador
 Quando estamos executando o robô localmente e queremos acessar o Orquestrador para buscar alguma informação, por exemplo, o caso das credenciais para acesso ao e-mail, precisamos fazer login na ferramenta, para que a conexão aconteça da maneira correta. Para isso, observe o arquivo `.env_example`. Você deverá renomeá-lo para `.env` e preencher as informações com o seu acesso. Para descobrir as suas informações, verifique a tela "Amb. de Desenvolvedor", ou ainda, siga as [orientações da documentação](https://documentation.botcity.dev/pt/maestro/features/dev-environment/).
 
 O arquivo deverá ter as seguintes informações:
@@ -42,10 +53,10 @@ MAESTRO_KEY = "coloque a key aqui"
 MAESTRO_SERVER = "coloque o server aqui"
 ```
 
-## 06. Valide permissionamento
+## 07. Valide permissionamento
 Para executar no seu computador ou máquina virtual, garanta que você tem permissão para rodar scripts, códigos etc.
 
-## 07. Crie a sua planilha no Google Sheets e verifique os CEPs para consulta
+## 08. Crie a sua planilha no Google Sheets e verifique os CEPs para consulta
 Após criar a sua planilha, substitua a constante no código:
 ```
 ID_PLANILHA = "insira o id da planilha aqui"
@@ -56,7 +67,7 @@ Ajuste também os CEPs que você deseja consultar e ajuste na constante no códi
 CEPS = ['cep1','cep2','cep3']
 ```
 
-## 08. Adicione os e-mails que deseja enviar
+## 09. Adicione os e-mails que deseja enviar
 Na função `enviar_email(maestro: BotMaestroSDK)` você deve identificar a linha `para = ["email1", "email2"]` e adicionar para quais e-mails deseja enviar a mensagem.
 
 # Para executar local
