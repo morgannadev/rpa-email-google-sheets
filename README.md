@@ -35,7 +35,7 @@ pip install --upgrade -r requirements.txt
 ```
 
 ## 03. Crie a credencial para acesso ao e-mail no BotCity Orquestrador
-Para acesso ao e-mail de maneira mais segura, criamos a credencial na plataforma do Orquestrador. O nome dado durante o desenvolvimento do projeto foi ``. Você pode ajustar isso, mas é importante lembrar de ajustar também no código. Para orientações de como criar a credencial, você pode seguir [este passo-a-passo](https://documentation.botcity.dev/pt/maestro/features/credentials/).
+Para acesso ao e-mail de maneira mais segura, criamos a credencial na plataforma do Orquestrador. O nome dado durante o desenvolvimento do projeto foi `ACESSO_EMAIL`. Você pode ajustar isso, mas é importante lembrar de ajustar também no código. Para orientações de como criar a credencial, você pode seguir [este passo-a-passo](https://documentation.botcity.dev/pt/maestro/features/credentials/).
 
 ## 04. Faça a configuração da API do Google Sheets
 No projeto criado, estamos utilizando a planilha do Google Sheets. Para seguir o mesmo modelo, você deverá configurar corretamente a API do Google Sheets com os seus acessos, conforme descrito no [passo-a-passo da documentação](https://documentation.botcity.dev/pt/plugins/google/sheets/).
